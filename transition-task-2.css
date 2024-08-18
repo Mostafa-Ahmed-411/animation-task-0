@@ -1,0 +1,86 @@
+body{
+    margin: 0%;
+    background-color: gray;
+    color: white; 
+    display: flex;
+}
+.member{
+    box-sizing: border-box;
+    border: 5px solid white;
+    /* width: 25%; */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+    
+.member .caption{
+    background-color: rgba(42,63,85,0.7);
+    position: absolute;
+    top: 0;
+    bottom:0 ;
+    text-align: center;
+    /* left: 101%; */
+    width: 100%;
+    /* opacity: 0; */
+    transition:opacity 1s 2s  ;
+    transition:rotate .5s 1s  ;
+    transition:all  1s  ;
+}
+.caption h2{
+    text-transform:uppercase ;
+}
+.member:hover .caption{
+    /* background-color: blue; */
+    /* left: 0; */
+    opacity: 1; 
+    transform: rotate(360deg);
+}
+.member:hover img{
+    transform: scale(1.5);
+}
+.member img{
+    width: 100%;
+    transition:transform 1s 1s  ;
+}
+.member .caption h2{
+    padding: 10px 0;
+    margin:0;
+    margin-bottom: 20px;
+    background-color: teal;
+    position: relative;
+    left: 110%;
+    transition: left 1s 2.5s;
+}
+.member:hover h2{
+    left: 0%;
+}
+.member .caption p{
+    position: relative;
+    left: 110%;
+    transition: left 1s 3s;
+}
+.member:hover p{
+    left: 0%;
+} 
+/* ===================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
